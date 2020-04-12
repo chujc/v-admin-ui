@@ -51,7 +51,7 @@
           icon="el-icon-plus"
           size="mini"
           @click="handleAdd"
-          v-has-permission="['admin.dict.configs.store']"
+          v-has-permission="['admin.configs.store']"
         >新增
         </el-button>
       </el-form-item>
@@ -72,7 +72,7 @@
             type="primary"
             icon="el-icon-edit"
             @click="handleUpdate(scope.row)"
-            v-has-permission="['admin.dict.configs.update']"
+            v-has-permission="['admin.configs.update']"
           >修改
           </el-button>
           <el-button
@@ -80,7 +80,7 @@
             type="danger"
             icon="el-icon-delete"
             @click="handleDelete(scope.row)"
-            v-has-permission="['admin.dict.configs.destroy']"
+            v-has-permission="['admin.configs.destroy']"
           >删除
           </el-button>
         </template>
